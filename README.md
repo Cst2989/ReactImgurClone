@@ -1,28 +1,21 @@
-ReactStarter
+ReactImgurClone
 ====
 
-Use this as a starting point for working on chapters of the [Build Web Apps with React JS and Flux](https://www.udemy.com/learn-and-understand-reactjs/) course on Udemy.com.
+This is a small imgur clone using React.js and the Imgur API
 
 ---
 
 ###Getting Started###
 
-There are two methods for getting started with this repo.
-
-####Familiar with Git?#####
-Checkout this repo, install dependencies, then start the gulp process with the following:
 
 ```
-	> git clone https://github.com/StephenGrider/ReactStarter.git
-	> cd ReactStarter
+	> git clone https://github.com/Cst2989/ReactImgurClone.git
+	> cd ReactImgurClone
 	> npm install
 	> gulp
 ```
 
-####Not Familiar with Git?#####
-Click [here](https://github.com/StephenGrider/ReactStarter/releases) then download the .zip file.  Extract the contents of the zip file, then open your terminal, change to the project directory, and:
 
-```
-	> npm install
-	> gulp
-```
+Register for an acount at Imgur https://api.imgur.com/oauth2/addclient
+Add your secret key inside the utils/api.jsx
+
