@@ -3,7 +3,7 @@ var React = require('react');
 var imagePreview = React.createClass({
 
 	render: function() {
-		return <div>
+		return <div className="image-preview">
 			{this.image()}
 		</div>
 	},

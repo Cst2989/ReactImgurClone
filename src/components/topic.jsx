@@ -19,7 +19,7 @@ var topic = React.createClass({
 	      Actions.getImages(nextProps.params.id);
 	},
 	render: function() {
-		return <div>
+		return <div className="topic">
 			{this.renderImages()}
 		</div>
 	},
