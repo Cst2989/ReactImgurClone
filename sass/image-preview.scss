@@ -1,8 +1,18 @@
 .image-preview{
 	display:inline-block;
+	width:200px;
+	height:200px;
+	overflow:hidden;
 	img{
 		height:200px;
-		width: 200px;
+		width:200px;
 		display: inline-block;
+	}
+	video{
+		width:200px;
+		height:200px;
+		vertical-align: middle;
+		background-color: #000;
+
 	}
 }
