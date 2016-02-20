@@ -1,0 +1,415 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"margin",
+				"margin-right"
+			],
+			[
+				"back",
+				"background-image"
+			],
+			[
+				"marg",
+				"margin-right"
+			],
+			[
+				"padd",
+				"padding-left"
+			],
+			[
+				"cur",
+				"cursor"
+			],
+			[
+				"pad",
+				"padding-top"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"borde",
+				"border-shadow"
+			],
+			[
+				"load",
+				"loaded3"
+			],
+			[
+				"mar",
+				"margin-bottom"
+			],
+			[
+				"padding",
+				"padding-bottom"
+			],
+			[
+				"bord",
+				"border-radius"
+			],
+			[
+				"tex",
+				"text-transform"
+			],
+			[
+				"tit",
+				"titles"
+			],
+			[
+				"templ",
+				"templates_details"
+			],
+			[
+				"var",
+				"var_dump"
+			],
+			[
+				"bud",
+				"budgets"
+			],
+			[
+				"field_des",
+				"field_descriptions"
+			],
+			[
+				"field_tit",
+				"field_titles"
+			],
+			[
+				"sc",
+				"scope"
+			],
+			[
+				"field",
+				"field_value"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"post",
+				"posts"
+			],
+			[
+				"fiel",
+				"field_value"
+			],
+			[
+				"pos",
+				"posts"
+			],
+			[
+				"budget",
+				"budgets"
+			],
+			[
+				"wi",
+				"wizzard"
+			],
+			[
+				"bu",
+				"budgets"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "reint",
+		"selected_items":
+		[
+			[
+				"reint",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"pro",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 521.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Applications/Apps/client/public/index.css",
+		"/Applications/Apps/client/public/index.html",
+		"/Applications/Apps/reactApp/src/main.js",
+		"/Applications/Apps/reactApp/main.js",
+		"/Applications/Apps/reactApp/src/index.js",
+		"/Applications/Apps/reactApp/public/index.html",
+		"/Applications/Apps/client/package.json",
+		"/Applications/Apps/client/src/index.js",
+		"/Applications/Apps/startjekyll/_config.yml",
+		"/Applications/XAMPP/xamppfiles/htdocs/forta/config/app.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/forta/resources/views/layout/public.blade.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/larevel-live/resources/views/ng/planner.blade.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/larevel-live/public/js/directives/planner.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/larevel-live/app/Http/Controllers/BudgetsController.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/larevel-live/public/scss/layout/_main.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/larevel-live/resources/views/ng/spendings.blade.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/larevel-live/config/database.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/larevel-live/resources/views/page/planner.blade.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/larevel-live/resources/views/block/public/header.blade.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/larevel-live/app/Http/routes.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/larevel-live/public/js/dependencies.json",
+		"/Applications/XAMPP/xamppfiles/htdocs/larevel-live/public/main.min.css",
+		"/Applications/XAMPP/xamppfiles/htdocs/larevel-live/app/Http/Controllers/HomeController.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/larevel-live/bootstrap/cache/compiled.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/larevel-live/resources/views/layout/public.blade.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/larevel-live/public/scss/pages/_home.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/larevel-live/public/scss/layout/_header.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/larevel-live/resources/views/page/main.blade.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/larevel-live/resources/views/block/public/head.blade.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/larevel-live/resources/views/page/alerts.blade.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/larevel-live/resources/views/page/forecasts.blade.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/larevel-live/resources/views/page/goals.blade.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/larevel-live/resources/views/page/reports.blade.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/larevel-live/resources/views/page/settins.blade.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/larevel-live/resources/views/page/spending.blade.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/larevel-live/public/scss/layout/_html.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/larevel-live/config/app.php",
+		"/var/folders/bw/7k07901j6pl9kz37bsmxhnw00000gn/T/sublime-sftp-browse-1444759251/cst-soft/public_html/porto/index.html",
+		"/var/folders/bw/7k07901j6pl9kz37bsmxhnw00000gn/T/sublime-sftp-browse-1444475163/cst-soft/public_html/index.html",
+		"/Users/Superman/Library/Application Support/Sublime Text 3/Packages/User/sftp_servers/cst-soft",
+		"/Users/Superman/Library/Application Support/Sublime Text 3/Packages/User/sftp_servers/frf",
+		"/var/folders/bw/7k07901j6pl9kz37bsmxhnw00000gn/T/sublime-sftp-browse-1444244790/frf/subdomains/arenafanilor/index.php",
+		"/Applications/style.css"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"<<",
+			"i class=\"",
+			"30",
+			"40",
+			"50",
+			"30",
+			"3",
+			"5",
+			"40",
+			"25",
+			"2",
+			"1",
+			"+",
+			"-",
+			"top;",
+			"div class=\"progress\"></div>",
+			"34px",
+			"333333",
+			"20px",
+			"value",
+			"Value",
+			"value",
+			"hidden",
+			"edit",
+			"templates_details",
+			"#",
+			"templates_details",
+			"console",
+			"c(",
+			"wizzar",
+			"name",
+			"index",
+			"p",
+			"addBudget",
+			"c(",
+			"create",
+			"title",
+			"budgets",
+			"users",
+			"name",
+			"=",
+			"data",
+			"users",
+			"spendings",
+			"#",
+			"spending",
+			"main"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 100.0
+	},
+	"pinned_build_system": "",
+	"project": "index.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"main.min",
+				"public/main.min.css"
+			],
+			[
+				"budge",
+				"app/Http/Controllers/BudgetsController.php"
+			],
+			[
+				"budgets",
+				"app/Http/Controllers/BudgetsController.php"
+			],
+			[
+				"header",
+				"resources/views/block/public/header.blade.php"
+			],
+			[
+				"maincss",
+				"public/main.min.css"
+			],
+			[
+				"depejs",
+				"public/js/dependencies.json"
+			],
+			[
+				"",
+				"Package Control Messages"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 173.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

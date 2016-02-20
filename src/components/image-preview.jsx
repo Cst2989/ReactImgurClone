@@ -1,4 +1,6 @@
 var React = require('react');
+var ReactRouter = require('react-router');
+var Link = ReactRouter.Link;
 
 var imagePreview = React.createClass({
 	getInitialState:function(){
@@ -7,13 +9,28 @@ var imagePreview = React.createClass({
 		}
 	},
 	render: function() {
-		return <div onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeave} className="image-preview">
+		return <Link to={"images/" + this.props.id} onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeave} className="image-preview">
 			{this.props.animated && this.state.hovering ? this.video() : this.image()}
-		</div>
+			{this.props.animated && !this.state.hovering ? this.icon() : null}
+			{this.state.hovering ? this.inset() : null}
+		</Link>
 	},
 	image:function(){
 		var link = 'http://i.imgur.com/' + this.props.id +'h.jpg';
 		return <img src={link} />
+	},
+	inset:function(){
+		return <div className="inset">
+			Views: {this.props.views}
+			<br/>
+			Upvotes: {this.props.ups}
+
+		</div>
+	},
+	icon:function(){
+		return <span className="glyphicon glyphicon-play">
+
+		</span>
 	},
 	video:function(){
 		return <div>
