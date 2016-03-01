@@ -4,4 +4,4 @@ var Routes = require('./routes');
 
 
 
-ReactDOM.render(Routes, document.querySelector('.container'));
+ReactDOM.render(Routes, document.querySelector('.app'));

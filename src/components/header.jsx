@@ -19,13 +19,16 @@ module.exports = React.createClass({
 	},
 	render:function(){
 		return <nav className="navbar navbar-default header">
-			<div className="container-fluid">
-				<Link to="/" className="navbar-brand">
-					Merge Braila
-				</Link>
-				<ul className="nav navbar-nav navbar-right">
-					{this.renderTopics()}
-				</ul>
+			<div className="container">
+				<div className="container-fluid">
+					<Link to="/" className="navbar-brand">
+
+						Merge <div>Braila</div>
+					</Link>
+					<ul className="nav navbar-nav navbar-right">
+						{this.renderTopics()}
+					</ul>
+				</div>
 			</div>
 		</nav>
 	},

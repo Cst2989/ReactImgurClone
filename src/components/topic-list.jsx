@@ -19,16 +19,24 @@ module.exports = React.createClass({
 		Actions.getTopics();
 	},
 	render: function() {
-		return <div className="list-group">
-			{this.renderTopics()}
+		return <div className="main">
+			<div className="container">
+				<div className="col-md-8 col-sm-6 col-xs-12">
+					<div className="list-group">
+						{this.renderTopics()}
+						<div className="clearfix"></div>
+					</div>
+				</div>
+			</div>
 		</div>
 	},
 	renderTopics:function(){
-		return this.state.topics.slice(0,4).map(function(topic){
+		return this.state.topics.map(function(topic){
 			return <Link to={"/topics/"+topic.id} className="list-group-item" key={topic.id}>
 				<h4>{topic.name}</h4>
 				<p>{topic.description}</p>
 			</Link>
+
 		})
 	},
 	onChange:function(event,topics){

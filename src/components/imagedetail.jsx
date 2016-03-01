@@ -51,12 +51,13 @@ var imagedetail = React.createClass({
 		}
 	},
 	renderImage:function(){
+		console.log(this.state.image)
 		if (this.state.image.animated){
 			return <video preload="auto" autoPlay="autoplay" webkit-playsinline loop="loop">
 				<source src={this.state.image.mp4} type="video/mp4" ></source>
 			</video>
 		}else{
-			return <img src="{this.state.image.link}" />
+			return <img src={this.state.image.link} />
 		}
 	},
 	onChange:function(){

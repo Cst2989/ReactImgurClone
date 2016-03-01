@@ -19,8 +19,12 @@ var topic = React.createClass({
 	      Actions.getImages(nextProps.params.id);
 	},
 	render: function() {
-		return <div className="topic">
-			{this.renderImages()}
+		return <div className="container">
+			<div className="col-md-8 col-sm-6 col-xs-12">
+				<div className="topic ">
+					{this.renderImages()}
+				</div>
+			</div>
 		</div>
 	},
 	renderImages:function(){
