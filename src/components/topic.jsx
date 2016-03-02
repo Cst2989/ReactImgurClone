@@ -2,7 +2,8 @@ var React = require('react');
 var Actions = require('../actions');
 var ImageStore = require('../stores/image-store');
 var Reflux = require('reflux');
-var ImagePreview =require('./image-preview')
+var ImagePreview =require('./image-preview');
+var ReactDOM = require('react-dom');
 var topic = React.createClass({
 	mixins:[
 		Reflux.listenTo(ImageStore,'onChange')
@@ -25,10 +26,16 @@ var topic = React.createClass({
 					{this.renderImages()}
 				</div>
 			</div>
+			<div className="col-md-4 col-sm-6 col-xs-12">
+				<div className="back_to_top" onClick={this.HandleClick}></div>
+			</div>
 		</div>
 	},
+	HandleClick:function(){
+		ReactDOM.findDOMNode(this).scrollIntoView();
+	},
 	renderImages:function(){
-		return this.state.images.slice(0,20).map(function(image){
+		return this.state.images.map(function(image){
 			return <ImagePreview key={image.id} {...image} />
 		});
 	},

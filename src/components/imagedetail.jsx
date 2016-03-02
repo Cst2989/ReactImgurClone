@@ -20,8 +20,11 @@ var imagedetail = React.createClass({
 	      Actions.getImage(this.props.params.id);
 	},
 	render: function() {
-		return <div className="image-detail">
-		{this.state.image ? this.renderContent() : null}
+		console.log(this.state.image);
+		return <div className="container">
+			<div className="image-detail">
+			{this.state.image ? this.renderContent() : null}
+			</div>
 		</div>
 	},
 	renderContent:function(){
@@ -32,9 +35,6 @@ var imagedetail = React.createClass({
 				</div>
 				<div className="panel-body">
 					{this.renderImage()}
-				</div>
-				<div className="panel-footer">
-					{this.state.image.description}
 				</div>
 			</div>
 			<h3>Comments:</h3>

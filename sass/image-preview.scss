@@ -6,14 +6,59 @@
 	overflow:hidden;
 	margin-bottom: 50px;
 	border:3px solid #542733;
+	.title{
+		font-size: 32px;
+		color:#414141;
+		&:hover{
+			text-decoration: none;
+		}
+	}
+	a:hover{
+		text-decoration: none;
+	}
 	.inset{
-		position: absolute;
-		bottom:5px;
-		left:0px;
+		position: relative;
 		width:100%;
-		background-color:#fff;
-		text-align:center;
-		opacity: .7;
+		padding-right: 30px;
+		display:block;
+		.views{
+			text-align:right;
+			color: #999;
+			font: 15px Helvetica Neue,Arial,Helvetica,Geneva,sans-serif;
+			position: absolute;
+			right:20px;
+			top:16px;
+		}
+		.share_buts{
+			position: relative;
+			display:block;
+		}
+		.btn-share {
+			display: block;
+			color: #fff;
+			margin: 10px;
+			float:left;
+			font-weight: 700;
+			height: 34px;
+			background-color: #f4f4f4;
+			line-height: 34px;
+			padding: 0 15px 0 34px;
+			border-radius: 3px;
+			text-align: center;
+			cursor:pointer;
+			&.facebook {
+				background: #3b5998 url(../img/but_logos.png) 0 0 no-repeat;
+				&:hover{
+					background-color: #4c70ba;
+				}
+			}
+			&.twitter {
+				background: #00aced url(../img/but_logos.png) 0 -34px no-repeat;
+				&:hover{
+					background-color: #21c2ff;
+				}
+			}
+		}
 	}
 	.glyphicon{
 		position: absolute;

@@ -1,6 +1,24 @@
 .black {
-  color: black
+	color: black
 }
 body{
-	    background: #f3f3f3;
+	background: #f3f3f3;
+}
+.back_to_top{
+	position: fixed;
+	bottom: 50px;
+	right: 50px;
+	width: 54px;
+	height: 54px;
+	background-image: url(../img/go_to_top.png);
+	cursor:pointer;
+}
+.container{
+	width:960px;
+}
+.panel-default{
+	border-color: #542733
+}
+.list-group-item{
+	border-color: #542733
 }
