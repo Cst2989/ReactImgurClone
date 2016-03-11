@@ -20,7 +20,6 @@ var imagePreview = React.createClass({
 		</div>
 	},
 	image:function(){
-		console.log(this.props)
 		return <img onMouseEnter={this.handleMouseEnter}  src={this.props.link} />
 	},
 	inset:function(){

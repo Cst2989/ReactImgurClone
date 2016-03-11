@@ -2,6 +2,7 @@ var React = require('react');
 var Actions = require('../actions');
 var ImageStore = require('../stores/image-store');
 var Reflux = require('reflux');
+var InfiniteScroll = require('react-infinite-scroll')(React);
 var ImagePreview =require('./image-preview');
 var ReactDOM = require('react-dom');
 var topic = React.createClass({
@@ -10,7 +11,8 @@ var topic = React.createClass({
 	],
 	getInitialState:function(){
 		return{
-			images:[]
+			images:[],
+			page:0,
 		}
 	},
 	componentWillMount:function(){
@@ -23,7 +25,13 @@ var topic = React.createClass({
 		return <div className="container">
 			<div className="col-md-8 col-sm-6 col-xs-12">
 				<div className="topic ">
-					{this.renderImages()}
+				<InfiniteScroll
+				    pageStart={this.state.page}
+				    loadMore={this.handleLoad}
+				    hasMore={true || false}
+				    loader={<div className="loader">Loading ...</div>}>
+				 	{this.renderImages()}
+				</InfiniteScroll>
 				</div>
 			</div>
 			<div className="col-md-4 col-sm-6 col-xs-12">
@@ -31,12 +39,16 @@ var topic = React.createClass({
 			</div>
 		</div>
 	},
+	handleLoad:function(){
+		console.log(this.state.page);
+		
+	},
 	HandleClick:function(){
 		ReactDOM.findDOMNode(this).scrollIntoView();
 	},
 	renderImages:function(){
 		return this.state.images.map(function(image){
-			return <ImagePreview key={image.id} {...image} />
+			return 	<ImagePreview key={image.id} {...image} />
 		});
 	},
 	onChange:function(event,images){
