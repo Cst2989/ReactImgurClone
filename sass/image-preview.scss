@@ -6,9 +6,12 @@
 	overflow:hidden;
 	margin-bottom: 50px;
 	border:3px solid #542733;
+	background-color: #fff;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
 	.title{
 		font-size: 32px;
 		color:#414141;
+		background-color: #fff;
 		&:hover{
 			text-decoration: none;
 		}
@@ -47,13 +50,13 @@
 			text-align: center;
 			cursor:pointer;
 			&.facebook {
-				background: #3b5998 url(../img/but_logos.png) 0 0 no-repeat;
+				background: #3b5998 url(img/but_logos.png) 0 0 no-repeat;
 				&:hover{
 					background-color: #4c70ba;
 				}
 			}
 			&.twitter {
-				background: #00aced url(../img/but_logos.png) 0 -34px no-repeat;
+				background: #00aced url(img/but_logos.png) 0 -34px no-repeat;
 				&:hover{
 					background-color: #21c2ff;
 				}

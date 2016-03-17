@@ -9,7 +9,9 @@ var server = require('gulp-server-livereload');
 var concat = require('gulp-concat');
 var sass = require('gulp-sass');
 var watch = require('gulp-watch');
-
+var uglify = require('gulp-uglify');
+var streamify = require('gulp-streamify');
+var gzip = require('gulp-gzip');
 var notify = function(error) {
   var message = 'In: ';
   var title = 'Error: ';
@@ -36,7 +38,7 @@ var bundler = watchify(browserify({
   entries: ['./src/app.jsx'],
   transform: [reactify],
   extensions: ['.jsx'],
-  debug: true,
+  debug: false,
   cache: {},
   packageCache: {},
   fullPaths: true
@@ -47,6 +49,7 @@ function bundle() {
     .bundle()
     .on('error', notify)
     .pipe(source('main.js'))
+    .pipe(streamify(uglify()))
     .pipe(gulp.dest('./'))
 }
 bundler.on('update', bundle);
@@ -71,10 +74,9 @@ gulp.task('serve', function(done) {
       open: true
     }));
 });
-
 gulp.task('sass', function () {
   gulp.src('./sass/**/*.scss')
-    .pipe(sass().on('error', sass.logError))
+    .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
     .pipe(concat('style.css'))
     .pipe(gulp.dest('./'));
 });
