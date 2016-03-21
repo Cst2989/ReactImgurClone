@@ -24,6 +24,10 @@ module.exports = React.createClass({
 				<div className="col-md-8 col-sm-6 col-xs-12">
 					<div className="list-group">
 						{this.renderTopics()}
+						<Link to="/random" className="list-group-item last">
+							<h4>Merge Braila</h4>
+							<p>A page of random gallery images.</p>
+						</Link>
 						<div className="clearfix"></div>
 					</div>
 				</div>

@@ -16,6 +16,16 @@ module.exports = Reflux.createStore({
 
 		}.bind(this));
 	},
+	getRandomImages:function(page){
+		return Api.get('gallery/random/random/'+page)
+		.then(function(json){
+			this.images = _.reject(json.data,function(image){
+				return image.is_album	
+			});
+			this.triggerChange();
+
+		}.bind(this));
+	},
 	getImage:function(id){
 		Api.get('gallery/image/'+id)
 		.then(function(json){

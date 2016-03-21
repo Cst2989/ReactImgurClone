@@ -1,5 +1,6 @@
 var React = require('react');
 var Header = require('./header');
+var Footer = require('./footer');
 var TopicList = require('./topic-list')
 
 module.exports = React.createClass({
@@ -7,6 +8,7 @@ module.exports = React.createClass({
 		return <div>
 			<Header />
 			{this.content()}
+			<Footer />
 		</div>
 	},
 	content:function(){

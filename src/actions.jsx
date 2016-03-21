@@ -4,5 +4,6 @@ module.exports = Reflux.createActions([
 		'getTopics',
 		'getImages',
 		'getImages2',
-		'getImage'
+		'getImage',
+		'getRandomImages'
 ]);

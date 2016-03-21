@@ -11,11 +11,31 @@ body{
 }
 .back_to_top{
 	position: fixed;
-	bottom: 50px;
+	bottom: 80px;
 	right: 50px;
 	width: 54px;
 	height: 54px;
 	background-image: url(img/go_to_top.png);
+	cursor:pointer;
+}
+.show_footer{
+	position: fixed;
+	bottom: 10px;
+	right: 50px;
+	width: 54px;
+	height: 54px;
+	background-image: url(img/footer.png);
+	cursor:pointer;
+}
+.close_footer{
+	position: relative;
+	display: block;
+	position: absolute;
+	top:50px;
+	width:54px;
+	height:54px;
+	right:50px;
+	background-image: url(img/close.png);
 	cursor:pointer;
 }
 .container{

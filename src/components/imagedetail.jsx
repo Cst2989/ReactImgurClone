@@ -8,12 +8,10 @@ var CommentBox = require("./comment-box")
 var imagedetail = React.createClass({
 	mixins:[
 		Reflux.listenTo(ImageStore,'onChange'),
-		Reflux.listenTo(CommentStore,'onChange')
 	],
 	getInitialState:function(){
 		return {
 			image:null,
-			comment:null
 		}
 	},
 	componentWillMount:function() {
@@ -36,19 +34,39 @@ var imagedetail = React.createClass({
 				<div className="panel-body">
 					{this.renderImage()}
 				</div>
+				<div className="panel-footer">
+						{this.inset()}
+				</div>
 			</div>
-			<h3>Comments:</h3>
-			{this.renderComments()}
+			
 		</div>
 	},
-	renderComments:function(){
-		if(!this.state.comments){
-			return null
-		}else{
-			return this.state.comments.map(function(comment){
-				return <CommentBox {... comment} key={comment.id} />
-			})
-		}
+	inset:function(){
+		return <div className="inset">
+			<div class="share_buts">
+				<div className="btn-share facebook" onClick={this.shareFb}>Facebook</div>
+				<div className="btn-share twitter">Twitter</div>
+			</div>
+		</div>
+	},
+	shareFb:function(){
+		FB.ui(
+		  {
+		    method: 'share',
+		    href:'http://localhost:8000/#/images/'+this.props.id,
+		    link: 'http://localhost:8000/#/images/'+this.props.id,
+		    caption:this.props.title,
+		    picture:this.props.link
+		  },
+		  // callback
+		  function(response) {
+		    if (response && !response.error_message) {
+		      //alert('Posting completed.');
+		    } else {
+		      //alert('Error while posting.');
+		    }
+		  }
+		);
 	},
 	renderImage:function(){
 		console.log(this.state.image)
@@ -63,7 +81,6 @@ var imagedetail = React.createClass({
 	onChange:function(){
 		this.setState({
 			image : ImageStore.find(this.props.params.id),
-			comments:CommentStore.comment
 		})
 	}
 

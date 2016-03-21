@@ -8,8 +8,8 @@
 }
 
 .navbar {
-  border: 0;
-  box-shadow: 0 2px 2px rgba(0,0,0,.05), 0 1px 0 rgba(0,0,0,.05);
+	border: 0;
+	box-shadow: 0 2px 2px rgba(0,0,0,.05), 0 1px 0 rgba(0,0,0,.05);
 }
 .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover{
 	color:red;
@@ -30,15 +30,15 @@
 	color:#fff;
 }
 .navbar-default .navbar-brand {
-  margin-left: 40px;
-  font-size: 20px;
-  font-weight: 700;
+	margin-left: 40px;
+	font-size: 20px;
+	font-weight: 700;
 }
 .navbar-default{
 	background-color: #542733;
-	    position: fixed;
-	    top:0;
-    width: 100%;
+	position: fixed;
+	top:0;
+	width: 100%;
 }
 .navbar-default .navbar-brand{
 	color:#fff;
@@ -58,6 +58,16 @@
 	width: 33.3%;
 	float: left;
 	height: 180px;
+}
+.main .list-group-item.last{
+	width:66.6%;
+	background-image: url(img/dice-xxl.png);
+	background-repeat: no-repeat;
+	background-size: 40%;
+	background-position: bottom right 10px;
+	h4{
+		text-transform: uppercase;
+	}
 }
 h4{
 	font-size: 32px;
@@ -85,6 +95,57 @@ h4{
 	border-radius: 5px;
 	display: block;
 	height: auto;
+}
+footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	color: #fff;
+	background-color: #542733;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	display:none;
+}
+footer.active{
+	display:block;
+}
+footer a {
+	color: #fff;
+	text-decoration: underline;
+
+	&:hover,
+	&:focus {
+		color: #fff;
+		text-decoration: none;
+	}
+}
+
+footer .thumb-md {
+	border: 1px solid rgba(255,255,255,.15);
+	transition: border .1s linear;
+
+	&:hover {
+		border-color: rgba(255,255,255,.3);
+	}
+}
+.list-inline a{
+	width:64px;
+	height:64px;
+	position: relative;
+	display: block;
+	background-size: 100%;
+	&.fb{
+		background-image: url(img/social/Facebook.png);
+	}
+	&.tw{
+		background-image: url(img/social/Twitter.png);
+	}
+	&.inst{
+		background-image: url(img/social/Instagram.png);
+	}
+	&.git{
+		background-image: url(img/social/Github.png);
+	}
 }
 @media screen and  (max-width:769px) {
 	.main .list-group-item{
