@@ -11,16 +11,19 @@ body{
 }
 .back_to_top{
 	position: fixed;
-	bottom: 80px;
+	bottom: 150px;
 	right: 50px;
 	width: 54px;
 	height: 54px;
 	background-image: url(img/go_to_top.png);
 	cursor:pointer;
 }
+#scriptContainer{
+	position: fixed;
+}
 .show_footer{
 	position: fixed;
-	bottom: 10px;
+	bottom: 80px;
 	right: 50px;
 	width: 54px;
 	height: 54px;

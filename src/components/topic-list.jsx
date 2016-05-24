@@ -2,6 +2,7 @@ var React = require('react');
 var Reflux = require('reflux');
 var TopicStore = require('../stores/topic-store');
 var Actions = require('../actions');
+var Sidebar = require('./sidebar');
 var ReactRouter = require('react-router');
 var Link = ReactRouter.Link;
 
@@ -31,6 +32,7 @@ module.exports = React.createClass({
 						<div className="clearfix"></div>
 					</div>
 				</div>
+				<Sidebar />
 			</div>
 		</div>
 	},

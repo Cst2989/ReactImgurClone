@@ -60,10 +60,10 @@
 	height: 180px;
 }
 .main .list-group-item.last{
-	width:66.6%;
+	width:33.3%;
 	background-image: url(img/dice-xxl.png);
 	background-repeat: no-repeat;
-	background-size: 40%;
+	background-size: 30%;
 	background-position: bottom right 10px;
 	h4{
 		text-transform: uppercase;
@@ -103,7 +103,7 @@ footer {
 	color: #fff;
 	background-color: #542733;
 	padding-top: 50px;
-	padding-bottom: 50px;
+	padding-bottom: 100px;
 	display:none;
 }
 footer.active{
@@ -147,10 +147,27 @@ footer .thumb-md {
 		background-image: url(img/social/Github.png);
 	}
 }
+.list-inline.list_big a{
+	 width: auto;
+	 height: auto;
+}
 @media screen and  (max-width:769px) {
 	.main .list-group-item{
 		width:100%;
 		float:none;
+	}
+	.main .list-group-item.last{
+		width: 100%;
+	}
+	.col-md-8{
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	.navbar-default .navbar-brand{
+		margin-left: 0px;
+	}
+	#scriptContainer{
+		display: none;
 	}
 	.main .list-group{
 		height:auto;

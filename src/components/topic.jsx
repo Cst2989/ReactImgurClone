@@ -3,6 +3,7 @@ var Actions = require('../actions');
 var ImageStore = require('../stores/image-store');
 var NextImages = require('../stores/image-store-2');
 var Reflux = require('reflux');
+var Sidebar = require('./sidebar');
 var InfiniteScroll = require('react-infinite-scroll')(React);
 var ImagePreview =require('./image-preview');
 var ReactDOM = require('react-dom');
@@ -38,9 +39,7 @@ var topic = React.createClass({
 		</InfiniteScroll>
 		</div>
 		</div>
-		<div className="col-md-4 col-sm-6 col-xs-12">
-		<div className="back_to_top" onClick={this.HandleClick}></div>
-		</div>
+		<Sidebar />
 		</div>
 	},
 	handleLoad:function(){
@@ -52,7 +51,7 @@ var topic = React.createClass({
 			page:this.state.page+1,
 			hasMore:false
 		});
-		
+
 		setTimeout(function () {
 			this.setState({
 				hasMore: true
@@ -60,9 +59,7 @@ var topic = React.createClass({
 		}.bind(this), 1000);
 		console.log(this.state.page);
 	},
-	HandleClick:function(){
-		ReactDOM.findDOMNode(this).scrollIntoView();
-	},
+
 	renderImages:function(){
 		return this.state.images.map(function(image){
 			return 	<ImagePreview key={image.id} {...image} />

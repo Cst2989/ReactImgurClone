@@ -38,25 +38,23 @@ var imagedetail = React.createClass({
 						{this.inset()}
 				</div>
 			</div>
-			
+
 		</div>
 	},
 	inset:function(){
 		return <div className="inset">
 			<div class="share_buts">
 				<div className="btn-share facebook" onClick={this.shareFb}>Facebook</div>
-				<div className="btn-share twitter">Twitter</div>
 			</div>
 		</div>
 	},
 	shareFb:function(){
 		FB.ui(
 		  {
-		    method: 'share',
-		    href:'http://localhost:8000/#/images/'+this.props.id,
-		    link: 'http://localhost:8000/#/images/'+this.props.id,
-		    caption:this.props.title,
-		    picture:this.props.link
+				method: 'feed',
+				link: 'http://mergebraila.ro/#/images/'+this.props.id,
+				name:this.props.title,
+				picture:this.props.link
 		  },
 		  // callback
 		  function(response) {

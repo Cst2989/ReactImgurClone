@@ -16,7 +16,7 @@ var imagePreview = React.createClass({
 				{this.props.animated && !this.state.hovering ? this.icon() : null}
 			</Link>
 				{this.inset()}
-			
+
 		</div>
 	},
 	image:function(){
@@ -27,7 +27,6 @@ var imagePreview = React.createClass({
 			<div className="views">{this.props.views} views</div>
 			<div class="share_buts">
 				<div className="btn-share facebook" onClick={this.shareFb}>Facebook</div>
-				<div className="btn-share twitter">Twitter</div>
 			</div>
 		</div>
 	},
@@ -39,10 +38,9 @@ var imagePreview = React.createClass({
 	shareFb:function(){
 		FB.ui(
 		  {
-		    method: 'share',
-		    href:'',
-		    link: 'http://localhost:8000/#/images/'+this.props.id,
-		    caption:this.props.title,
+		  	method: 'feed',
+		    link: 'http://mergebraila.ro/#/images/'+this.props.id,
+		    name:this.props.title,
 		    picture:this.props.link
 		  },
 		  // callback
