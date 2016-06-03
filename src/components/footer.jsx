@@ -24,8 +24,8 @@ module.exports = React.createClass({
             <div className='col-sm-6 hidden-xs'>
               <h3 className='lead'>Social Media Links</h3>
               <ul className='list-inline'>
-              	<li><a href="#" className="fb"></a></li>
-              	<li><a href="#" className="git"></a></li>
+              	<li><a href="https://www.facebook.com/MergeBraila.ro/" className="fb"></a></li>
+              	<li><a href="https://github.com/Cst2989/ReactImgurClone" className="git"></a></li>
               	<li><a href="#" className="tw"></a></li>
               	<li><a href="#" className="inst"></a></li>
               </ul>
